@@ -1,2 +1,11 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+h1, h2, h3, h4, h5, h6 {
+    color: #c16d53;
+}
+
+.site-header, .site-footer {
+    background-color: #2f2f2f5c; //  #172138;
+}
+
