@@ -25,3 +25,5 @@ $ sudo apt install tmux
 
 ## Basic usage
 
+To start a new (unnamed) session just type `tmux`. If you want to give a name to the session, then run `tmux new -s session_name`
+
