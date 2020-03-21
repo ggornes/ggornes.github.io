@@ -15,10 +15,10 @@ $sol-is-dark: false !default;
 // The inline comments show the canonical L*a*b values for each color.
 
 $sol-base03:   #0f100f;  // 15 -12 -12 // #002b36
-$sol-base02:   #212424;  // 20 -12 -12 // #073642
-$sol-base01:   #c16d53;  // 45 -07 -07
+$sol-base02:   rgba(33, 36, 36, 0.30);  // 20 -12 -12 // #073642
+$sol-base01:   #558e57;  // 45 -07 -07 #c16d53
 $sol-base00:   #65836e;  // 50 -07 -07
-$sol-base0:    #c16d53;  // 60 -06 -03 // #839496
+$sol-base0:    #558e57;  // 60 -06 -03 // #839496 #c16d53
 $sol-base1:    #93a1a1;  // 65 -05 -02
 $sol-base2:    #eee8d5;  // 92 -00  10
 $sol-base3:    #fdf6e3;  // 97  00  10
