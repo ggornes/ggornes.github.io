@@ -67,14 +67,15 @@ If everything installed correctly, you should now have Ruby and RubyGems install
 
 {% highlight bash%}
 $ ruby -v
-
 ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
+
+$ which ruby
+/snap/bin/ruby
 {% endhighlight %}
 
 
 {% highlight bash%}
 $ gem -v
-
 3.1.2
 {% endhighlight %}
 
@@ -84,67 +85,50 @@ $ gem -v
 $ sudo apt install gcc, g++, build-essential
 {% endhighlight %}
 
+So far, we have installed Ruby and and it's package manager (or 'gem' manager), RubyGems. The next step would be install Jekyll and Bundler.
 
+Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.
 
+### Install Jekyll
+
+{% highlight bash%}
+$ gem install jekyll
+{% endhighlight %}
+
+### Install Bundler
+
+{% highlight bash%}
+$ gem install bundler
+{% endhighlight %}
 
 ---
-(Not to be included)
 
-* RubyGems (which you can check by running `gem -v`)
-* GCC and Make
+And that is all! Now you can create a new Jekyll site:
 
-sudo apt-get install ruby-full
+{% highlight bash%}
+$ jekyll new my_site
+$ cd my_site
+$ bundle exec jekyll serve
+{% endhighlight %}
 
-ruby -v
+Browse to http://localhost:4000
 
 
 
-install ruby using snapd
+<!-- 
 
-which snapd
-snapd --version
+Sources
 
-sudo snap install ruby --classic
-
-which ruby
-ruby -v
+https://jekyllrb.com/docs/
 
 (https://www.ruby-lang.org/en/documentation/installation/)
 (https://stackify.com/install-ruby-on-ubuntu-everything-you-need-to-get-going/)
 
-voux@ubuntu-droplet-1 ~> ruby -v
-Command 'ruby' is available in '/snap/bin/ruby'
-The command could not be located because '/snap/bin' is not included in the PATH environment variable.
-ruby: command not found
 
-
-Edit /etc/environment and add /snap/bin in the list then restart your system.
-Run the command export PATH=$PATH:/snap/bin
 (https://stackoverflow.com/questions/57121916/the-command-could-not-be-located-because-snap-bin-is-not-included-in-the-path)
 
-voux@ubuntu-droplet-1 ~> which ruby
-/snap/bin/ruby
-voux@ubuntu-droplet-1 ~> ruby -v
-ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
-voux@ubuntu-droplet-1 ~>
 
+-->
 
-
-Jekyll is a Ruby Gem that can be installed on most systems.
-
-RequirementsPermalink
-Ruby version 2.4.0 or above, including all development headers (ruby version can be checked by running ruby -v)
-RubyGems (which you can check by running gem -v)
-GCC and Make (in case your system doesn’t have them installed, which you can check by running gcc -v,g++ -v and make -v in your system’s command line interface)
-
-
-
-sudo apt install gcc
-sudo apt install g++
-sudo apt install build-essential
-
-
-
-gem install jekyll bundler
 
 
