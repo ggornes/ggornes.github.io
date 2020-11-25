@@ -6,9 +6,6 @@ categories: Code Talk Science Technology
 ---
 I recently stumbled upon some interesting talks about code on youtube:
 
-### Dylan Beattie - The cost of code
+### [Dylan Beattie - The cost of code](https://www.youtube.com/watch?v=001SxQCEuv8)
 
-{% youtube "https://www.youtube.com/watch?v=001SxQCEuv8" %}
-
-### Dylan Beattie - The art of code
-{% youtube "https://www.youtube.com/watch?v=gdSlcxxYAA8"  %}
+### [Dylan Beattie - The art of code](https://www.youtube.com/watch?v=gdSlcxxYAA8)
